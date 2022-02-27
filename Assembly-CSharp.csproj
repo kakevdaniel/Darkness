@@ -53,7 +53,13 @@
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\player.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Enemy_health.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Enemy_follow.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\cameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\player.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Waves.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\bullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -718,6 +724,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{F9BC3C92-96BA-417A-1D3E-9A06DDD19188}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{9DAE2BBD-5AD1-80D1-A6C9-B3F3404E7F81}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
