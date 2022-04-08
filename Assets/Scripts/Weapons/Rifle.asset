@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078d7d6cf8f86f747a77698c7af6109f, type: 3}
+  m_Name: Rifle
+  m_EditorClassIdentifier: 
+  currentWeaponAnim: {fileID: 9100000, guid: 4274ca31458262145a6651626b7551b7, type: 2}
+  bulletPrefab: {fileID: 2759160800198755418, guid: cbea5368baeab10489dfa3a437de30d5, type: 3}
+  fireRate: 6
+  weaponName: Rifle
+  damage: 2

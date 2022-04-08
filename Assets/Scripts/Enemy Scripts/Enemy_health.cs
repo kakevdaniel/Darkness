@@ -7,21 +7,20 @@ public class Enemy_health : MonoBehaviour
     [SerializeField]
     private int zhealth;
     
-    
     void Update()
     {
         if(zhealth < 1){
             Destroy(gameObject);
-            
+            Score.scoreValue += 20;
         } 
     }
 
     void OnTriggerEnter2D(Collider2D target) 
     {   
         if (target.CompareTag("bullet"))
-        {       
-            //zhealth -= GameObject.Find("Player").GetComponent<Player>().currentWeapon.damage;
-            zhealth -=1;
+        {
+            Score.scoreValue += 10;
+            zhealth -= GameObject.Find("Player").GetComponent<player>().currWeapon.damage;
             Destroy(target.gameObject);
         }
         

@@ -15,8 +15,15 @@ public class bullet : MonoBehaviour
         transform.position = GameObject.Find("FirePoint").transform.position;
         DestroyBullet();
     }
-
-    void DestroyBullet()    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
+    void DestroyBullet()
     {
         Destroy(gameObject, 3);
         /* Debug.Log("Destroyed"); */
@@ -24,6 +31,6 @@ public class bullet : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, dir, speed * Time.deltaTime);
-        
+
     }
 }

@@ -7,14 +7,16 @@ TagManager:
   - Enemy
   - bullet
   - Walls
+  - Player_rifle
+  - Shop
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - leggs
   - Water
   - UI
-  - 
+  - wall
   - 
   - 
   - 
@@ -43,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: walls
+    uniqueID: 3839725237
     locked: 0
